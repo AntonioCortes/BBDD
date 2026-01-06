@@ -1,0 +1,38 @@
+<h1 class="title">Data Manipulation Language (DML)</h1>
+
+<p>
+    DML (Data Manipulation Language) se utiliza para manipular los datos dentro de las tablas. Los comandos principales son <code>INSERT</code>, <code>UPDATE</code> y <code>DELETE</code>.
+</p>
+
+<h2 class="subtitle">INSERT</h2>
+<p>
+    Inserta nuevos registros en una tabla.
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+INSERT INTO users (name, email) VALUES ('Juan', 'juan@example.com');
+</code></pre>
+</div>
+
+<h2 class="subtitle">UPDATE</h2>
+<p>
+    Modifica registros existentes en una tabla.
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+UPDATE products SET price = 20 WHERE id = 1;
+</code></pre>
+</div>
+
+<h2 class="subtitle">DELETE</h2>
+<p>
+    Elimina registros de una tabla.
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+DELETE FROM orders WHERE status = 'cancelled';
+</code></pre>
+</div>

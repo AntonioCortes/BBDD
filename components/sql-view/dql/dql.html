@@ -1,0 +1,28 @@
+<h1 class="title">Data Query Language (DQL)</h1>
+
+<p>
+    DQL (Data Query Language) son instrucciones SQL utilizadas para obtener datos de la base de datos. El comando principal es <code>SELECT</code>.
+</p>
+
+<h2 class="subtitle">SELECT</h2>
+<p>
+    Se utiliza para recuperar registros de una o más tablas.
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+SELECT column1, column2 FROM table_name;
+</code></pre>
+</div>
+
+<span class="center-horizontal caption">Ejemplo de consulta básica</span>
+
+<p>
+    También podemos filtrar resultados con <code>WHERE</code>:
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+SELECT * FROM employees WHERE department = 'IT';
+</code></pre>
+</div>

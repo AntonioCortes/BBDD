@@ -1,0 +1,40 @@
+<h1 class="title">Transaction Control Language (TCL)</h1>
+
+<p>
+    TCL (Transaction Control Language) gestiona las transacciones en la base de datos, asegurando la integridad de los datos.
+</p>
+
+<h2 class="subtitle">COMMIT</h2>
+<p>
+    Guarda los cambios realizados en la transacción actual de forma permanente.
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+COMMIT;
+</code></pre>
+</div>
+
+<h2 class="subtitle">ROLLBACK</h2>
+<p>
+    Deshace los cambios realizados en la transacción actual (si no se ha hecho commit).
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+ROLLBACK;
+</code></pre>
+</div>
+
+<h2 class="subtitle">SAVEPOINT</h2>
+<p>
+    Establece un punto de guardado dentro de una transacción al que se puede volver más tarde.
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+SAVEPOINT savepoint_name;
+-- Do some work
+ROLLBACK TO savepoint_name;
+</code></pre>
+</div>

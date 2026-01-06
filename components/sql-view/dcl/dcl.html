@@ -1,0 +1,27 @@
+<h1 class="title">Data Control Language (DCL)</h1>
+
+<p>
+    DCL (Data Control Language) se utiliza para gestionar los permisos y accesos a los datos.
+</p>
+
+<h2 class="subtitle">GRANT</h2>
+<p>
+    Otorga permisos a un usuario.
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+GRANT SELECT, INSERT ON users TO 'usuario1';
+</code></pre>
+</div>
+
+<h2 class="subtitle">REVOKE</h2>
+<p>
+    Quita permisos previamente otorgados.
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+REVOKE INSERT ON users FROM 'usuario1';
+</code></pre>
+</div>

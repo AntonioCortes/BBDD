@@ -1,0 +1,75 @@
+<h1 class="title">Data Definition Language (DDL)</h1>
+
+<p>
+    DDL (Data Definition Language) se utiliza para definir la estructura de la base de datos (tablas, esquemas, índices, etc.).
+</p>
+
+<h2 class="subtitle">CREATE</h2>
+<p>
+    Crea nuevos objetos en la base de datos, como tablas.
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+CREATE TABLE users (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100) UNIQUE
+);
+</code></pre>
+</div>
+
+<h2 class="subtitle">ALTER</h2>
+<p>
+    Modifica la estructura de un objeto existente.
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+ALTER TABLE users ADD COLUMN created_at DATE;
+</code></pre>
+</div>
+
+<h2 class="subtitle">DROP</h2>
+<p>
+    Elimina un objeto de la base de datos permanentemente.
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+DROP TABLE old_data;
+</code></pre>
+</div>
+
+<h2 class="subtitle">TRUNCATE</h2>
+<p>
+    Elimina todos los registros de una tabla, pero mantiene su estructura. Es más rápido que DELETE.
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+TRUNCATE TABLE logs;
+</code></pre>
+</div>
+
+<h2 class="subtitle">COMMENT</h2>
+<p>
+    Añade comentarios al diccionario de datos.
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+COMMENT ON COLUMN users.email IS 'Email address of the user';
+</code></pre>
+</div>
+
+<h2 class="subtitle">RENAME</h2>
+<p>
+    Cambia el nombre de un objeto.
+</p>
+
+<div class="center-horizontal">
+<pre><code class="language-sql">
+RENAME TABLE users TO customers;
+</code></pre>
+</div>

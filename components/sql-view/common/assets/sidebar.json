@@ -1,0 +1,26 @@
+{
+    "pageContent" : [
+        {
+            "text": "Data Query Language (DQL)",
+            "content": "component-dql"
+        },
+        {
+            "text": "Data Manipulation Language (DML)",
+            "content": "component-dml"
+        },
+        {
+            "text": "Data Definition Language (DDL)",
+            "content": "component-ddl"
+        },
+        {
+            "text": "Data Control Language (DCL)",
+            "content": "component-dcl"
+        },
+        {
+            "text": "Transaction Control Language (TCL)",
+            "content": "component-tcl"
+        }
+    ],
+    "links" : [
+    ]
+}

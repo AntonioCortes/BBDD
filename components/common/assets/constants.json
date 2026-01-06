@@ -1,0 +1,12 @@
+{
+    "common": {
+        "paths": {
+            "navbar": "components/common/navbar.html",
+            "sidebar": "components/common/sidebar.html"
+        }
+    },
+    "mainView": {
+        "topic": "SQL",
+        "basePath": "components/sql-view"
+    }
+}
