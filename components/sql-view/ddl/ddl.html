@@ -21,12 +21,45 @@ CREATE TABLE users (
 
 <h2 class="subtitle">ALTER</h2>
 <p>
-    Modifica la estructura de un objeto existente.
+    Modifica la estructura de un objeto existente. A continuación veremos cómo trabajar con columnas.
 </p>
 
+<p><strong>Añadir columnas</strong></p>
+<p>
+    Para añadir una columna usamos la cláusula <code>ADD</code>.
+</p>
 <div class="center-horizontal">
 <pre><code class="language-sql">
 ALTER TABLE users ADD COLUMN created_at DATE;
+</code></pre>
+</div>
+
+<p>
+    También podemos asignar un valor por defecto a la nueva columna usando <code>DEFAULT</code>.
+</p>
+<div class="center-horizontal">
+<pre><code class="language-sql">
+ALTER TABLE users ADD COLUMN is_active BOOLEAN DEFAULT TRUE;
+</code></pre>
+</div>
+
+<p><strong>Eliminar columnas</strong></p>
+<p>
+    Para eliminar una columna usamos la cláusula <code>DROP COLUMN</code>.
+</p>
+<div class="center-horizontal">
+<pre><code class="language-sql">
+ALTER TABLE users DROP COLUMN phone_number;
+</code></pre>
+</div>
+
+<p><strong>Renombrar columnas</strong></p>
+<p>
+    Para renombrar una columna usamos la cláusula <code>RENAME COLUMN</code>.
+</p>
+<div class="center-horizontal">
+<pre><code class="language-sql">
+ALTER TABLE users RENAME COLUMN name TO full_name;
 </code></pre>
 </div>
 
